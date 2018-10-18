@@ -7,9 +7,11 @@ const {app, BrowserWindow, Menu, ipcMain} = electron;
 let mainWindow;
 
 app.on("ready", function() {
-	const {width, height} = electron.screen.getPrimaryDisplay().workAreaSize;
 
+	const {width, height} = electron.screen.getPrimaryDisplay().workAreaSize;
 	mainWindow = new BrowserWindow({width, height});
+	mainWindow.setFullScreen(true);
+	mainWindow.setMenu(null);
 
 	mainWindow.loadURL(url.format({
 		pathname: path.join(__dirname, 'index.html'),
