@@ -1,0 +1,22 @@
+{
+  "name": "mirrorproto",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "sh run-start.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TumanovArtem/MirrorProto.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TumanovArtem/MirrorProto/issues"
+  },
+  "homepage": "https://github.com/TumanovArtem/MirrorProto#readme",
+  "dependencies": {
+    "electron": "^3.0.4"
+  }
+}
